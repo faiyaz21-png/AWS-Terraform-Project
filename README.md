@@ -2,7 +2,7 @@
 
 
 
-**Overview**
+#**Overview**
 
 
 I recently completed a cloud architecture project where I deployed a highly available and scalable website on AWS using Terraform. This project involved setting up an automated infrastructure-as-code (IaC) environment to create and manage cloud resources efficiently. Below, I outline the steps I followed to build and deploy the website successfully.
