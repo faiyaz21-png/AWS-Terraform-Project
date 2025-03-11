@@ -1,2 +1,2 @@
-# AWS-Terraform-Project
-This is a cloud infrastructure project on AWS using Terraform
+# Terraform-Project
+This is a repository for my Terraform Project
