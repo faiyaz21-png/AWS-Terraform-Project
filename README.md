@@ -1,4 +1,4 @@
-![Alt text](/Terraform-project-architecture.jpeg)
+![Alt text](/Terraform-project-architecture.jpg)
 
 
 **Overview**
