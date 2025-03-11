@@ -3,22 +3,24 @@
 
 
 **Overview**
+
+
 I recently completed a cloud architecture project where I deployed a highly available and scalable website on AWS using Terraform. This project involved setting up an automated infrastructure-as-code (IaC) environment to create and manage cloud resources efficiently. Below, I outline the steps I followed to build and deploy the website successfully.
 
 **Architecture**
-* GitHub for Version Control – Used GitHub to store and manage Terraform code, enabling version control and collaboration.
-* VPC (Virtual Private Cloud) – Created a VPC with both public and private subnets across two Availability Zones for high availability.
-* Security Groups – Configured Security Groups to enforce access control by opening only the required ports.
-* NAT Gateway – Set up NAT Gateways in public subnets to enable private subnets to access the internet securely.
-* Application Load Balancer (ALB) – Implemented an ALB to distribute web traffic across an Auto Scaling Group (ASG) of EC2 instances.
-* EC2 Instances – Deployed EC2 instances in the private subnet within an Auto Scaling Group to ensure scalability and high availability.
-* MySQL RDS Database – Configured a managed relational database for storing website data securely.
-* SNS (Simple Notification Service) – Set up Amazon SNS to send notifications about key events, such as scaling activities.
-* Route 53 – Created a domain name record to manage website access through AWS Route 53.
+* **GitHub for Version Control** – Used GitHub to store and manage Terraform code, enabling version control and collaboration.
+* **VPC (Virtual Private Cloud)** – Created a VPC with both public and private subnets across two Availability Zones for high availability.
+* **Security Groups** – Configured Security Groups to enforce access control by opening only the required ports.
+* **NAT Gateway** – Set up NAT Gateways in public subnets to enable private subnets to access the internet securely.
+* **Application Load Balancer (ALB)** – Implemented an ALB to distribute web traffic across an Auto Scaling Group (ASG) of EC2 instances.
+* **EC2 Instances** – Deployed EC2 instances in the private subnet within an Auto Scaling Group to ensure scalability and high availability.
+* **MySQL RDS Database** – Configured a managed relational database for storing website data securely.
+* **SNS (Simple Notification Service)** – Set up Amazon SNS to send notifications about key events, such as scaling activities.
+* **Route 53** – Created a domain name record to manage website access through AWS Route 53.
 
 **Steps to Deploy the Website**
 
-1. Environment Setup
+1. **Environment Setup**
 * Installed Terraform to manage AWS resources via Infrastructure-as-Code (IaC).
 * Signed up for a GitHub account and created a repository to store Terraform scripts.
 * Installed Git for version control and cloned the repository to the local system.
@@ -26,22 +28,22 @@ I recently completed a cloud architecture project where I deployed a highly avai
 * Installed AWS CLI to authenticate and manage AWS services programmatically.
 * Generated SSH key pairs and added the public SSH key to GitHub for secure, passwordless authentication.
 
-2. Networking Configuration
+2. **Networking Configuration**
 * Created a VPC with both public and private subnets across two Availability Zones.
 * Configured an Internet Gateway to enable internet access for public-facing resources.
 * Implemented NAT Gateways to allow private instances to access the internet securely.
 * Defined Security Groups to control traffic to and from the EC2 instances, ALB, and database.
 
-3. Compute and Database Setup
+3. **Compute and Database Setup**
 * Created an Auto Scaling Group (ASG) to launch and manage EC2 instances dynamically.
 * Configured an Application Load Balancer (ALB) to distribute traffic evenly across EC2 instances.
 * Deployed a MySQL RDS database for structured data storage and management.
 
-4. DNS and Monitoring
+4. **DNS and Monitoring**
 * Registered a domain in Route 53 and configured a DNS record set to point to the ALB.
 * Set up Amazon SNS for notifications on scaling activities and infrastructure events.
 
-Deployment Process
+**Deployment Process**
 1. Write Terraform Code – Created Terraform scripts for provisioning AWS resources.
 2. Initialize Terraform – Ran terraform init to download the required provider plugins.
 3. Plan Infrastructure – Used terraform plan to preview the changes before applying them.
