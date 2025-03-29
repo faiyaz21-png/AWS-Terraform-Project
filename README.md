@@ -2,10 +2,11 @@
 
 
 
-#**Overview**
+**Overview**
 
+I recently completed a cloud architecture project where I deployed a highly available and scalable website on AWS using Terraform. This project involved setting up an automated infrastructure-as-code (IaC) environment to create and manage cloud resources efficiently. The objective was to simulate the deployment of a production-grade, secure, and resilient web application on AWS. I wanted to understand how to use Terraform to provision and manage AWS resources effectively while gaining hands-on experience with high availability, scalability, and secure network design. As someone who is still learning to code, this was also an opportunity to explore how far reference materials and a structured approach could take me. I leveraged Terraform reference guides to build my configurations. While I’m not yet proficient in coding, these resources were instrumental in helping me understand and apply best practices.
 
-I recently completed a cloud architecture project where I deployed a highly available and scalable website on AWS using Terraform. This project involved setting up an automated infrastructure-as-code (IaC) environment to create and manage cloud resources efficiently. Below, I outline the steps I followed to build and deploy the website successfully.
+Below, I outline the steps I followed to build and deploy the website successfully.
 
 **Architecture**
 * **GitHub for Version Control** – Used GitHub to store and manage Terraform code, enabling version control and collaboration.
@@ -62,4 +63,4 @@ I recently completed a cloud architecture project where I deployed a highly avai
 This project successfully demonstrated how to deploy a scalable and fault-tolerant website using AWS and Terraform. Future improvements can include implementing CI/CD pipelines for automated deployments and integrating monitoring solutions like CloudWatch and Prometheus.
 
 
-Please note certain files have been removed for security reasons.
+Note: Terraform scripts were adapted from community and official reference guides. I am still building my coding skills, and this project was a significant step in progressing toward cloud architecture proficiency. Certain files have been removed for security reasons.
